@@ -37,12 +37,12 @@ function Korpa({ krofne, onRemove }) {
                   <tr>
                     <td>{prod.title}</td>
                     <td>{prod.amount}</td>
-                    <td>RSD {prod.price}</td>
+                    <td>{prod.price} RSD</td>
                   </tr>
                 </>
               ))}
             </table>
-            <h3 className="txt-total">Ukupno: RSD {ukupno}</h3>
+            <h3 className="txt-total">Ukupno: {ukupno} RSD</h3>
           </div>
         </>
       )}

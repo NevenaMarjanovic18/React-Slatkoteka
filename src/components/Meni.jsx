@@ -8,14 +8,11 @@ function Meni({ cartNum, isHome, isShop }) {
       <Link to="/" className="link-img">
         <img
           src="https://slatkoteka.rs/wp-content/uploads/2020/10/group-11.svg"
-          className={isHome === 1 ? "img-slatkoteka" : "img-slatkoteka-else"}
+          alt="slika logo"
+          className={isHome === 1 ? "img" : "img-else"}
         />
       </Link>
 
-      <Link
-        to="/"
-        className={isHome === 1 ? "txt-slatkoteka" : "txt-slatkoteka-else"}
-      ></Link>
       <div
         className={
           isHome === 1 ? "menu-bar-items-div" : "menu-bar-items-div-else"
@@ -24,7 +21,11 @@ function Meni({ cartNum, isHome, isShop }) {
         <Link
           to="/prodavnica"
           className="menu-bar-items"
-          style={{ color: "white" }}
+          style={
+            isShop === 1
+              ? { fontStyle: "italic" }
+              : { textDecorationLine: "underline" }
+          }
         >
           Krofne
         </Link>

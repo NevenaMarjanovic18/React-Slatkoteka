@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const [cartNum, setCartNum] = useState(0);
   const [cartProducts, setCartProducts] = useState([]);
-  const [krofne, setProducts] = useState([
+  const [krofne] = useState([
     {
       id: 1,
       title: "Choco Mrvica",
